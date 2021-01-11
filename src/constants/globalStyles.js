@@ -1,4 +1,5 @@
 import colors from './colors';
+import fonts from './fonts';
 
 // define space grid
 // /////////////////////////////////////////////////////////////////////////////
@@ -89,7 +90,9 @@ export default {
   // navbar header
   // ///////////////////////////////////////////////////////////////////////////
   navHeaderContainerStyle: {
-    borderBottomColor: colors.black
+    backgroundColor: colors.background,
+    borderBottomColor: colors.background,
+    shadowColor: 'transparent'
   },
   navHeaderTitleStyle: {
     color: colors.black,
@@ -103,8 +106,22 @@ export default {
     marginBottom: 0
   },
   navTabStyle: {
+    backgroundColor: colors.background,
+    borderTopColor: colors.background
+  },
+
+  // nav tab
+  // ///////////////////////////////////////////////////////////////////////////
+  btnPrimary: {
     backgroundColor: colors.primary,
-    borderTopColor: colors.black
+    borderRadius: 16,
+    paddingHorizontal: space2,
+    paddingVertical: spaceHalf
+  },
+  btnPrimaryText: {
+    color: colors.background,
+    fontFamily: fonts.flameRegular,
+    fontSize: 14
   },
 
   // padding
