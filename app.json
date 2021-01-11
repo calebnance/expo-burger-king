@@ -1,16 +1,18 @@
 {
   "expo": {
-    "name": "Quick Prototype",
-    "slug": "expo-quick-prototype",
+    "name": "Expo Burger King",
+    "description": "Burger King: UI Clone with React Native & Expo",
+    "scheme": "burgerkingclone",
+    "slug": "burgerkingclone",
     "privacy": "public",
     "version": "0.0.1",
     "platforms": ["android", "ios", "web"],
-    "githubUrl": "https://github.com/calebnance/expo-quick-prototype",
+    "githubUrl": "https://github.com/calebnance/expo-burger-king",
     "orientation": "portrait",
-    "primaryColor": "#0f4c75",
+    "primaryColor": "#f5ebdc",
     "icon": "src/assets/icon.png",
     "splash": {
-      "backgroundColor": "#0f4c75",
+      "backgroundColor": "#f5ebdc",
       "image": "src/assets/splash.png",
       "resizeMode": "contain"
     },
@@ -18,7 +20,11 @@
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": ["**/*"],
+    "android": {
+      "versionCode": 1
+    },
     "ios": {
+      "buildNumber": "0.0.1",
       "supportsTablet": true
     }
   }

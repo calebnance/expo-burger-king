@@ -1,15 +1,15 @@
 {
-  "name": "expo-quick-prototype",
+  "name": "expo-burger-king",
   "version": "0.0.1",
-  "description": "quick prototype template for expo/react native",
+  "description": "Burger King UI Clone with Expo",
   "author": "Caleb Nance",
   "license": "MIT",
   "keywords": [
     "expo",
     "react native",
-    "react navigation"
+    "react navigation",
+    "burger king"
   ],
-  "private": true,
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "dev": "expo start",
@@ -24,7 +24,9 @@
   "dependencies": {
     "@react-native-community/masked-view": "0.1.10",
     "expo": "^40.0.0",
-    "expo-linking": "~2.0.0",
+    "expo-app-loading": "^1.0.1",
+    "expo-asset": "^8.2.1",
+    "expo-font": "^8.4.0",
     "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -60,5 +62,6 @@
   },
   "eslintIgnore": [
     "babel.config.js"
-  ]
+  ],
+  "private": true
 }
