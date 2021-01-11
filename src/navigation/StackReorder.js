@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { createStackNavigator } from 'react-navigation-stack';
 
 // screens
-import MoreScreen from '../screens/More';
+import ReorderScreen from '../screens/Reorder';
 
 // icons
-import SvgMore from '../icons/Svg.More';
+import SvgReorder from '../icons/Svg.Reorder';
 
-const Icon = ({ focused }) => <SvgMore active={focused} />;
+const Icon = ({ focused }) => <SvgReorder active={focused} />;
 
 Icon.propTypes = {
   // required
@@ -17,14 +17,14 @@ Icon.propTypes = {
 
 export default createStackNavigator(
   {
-    More: {
-      screen: MoreScreen
+    Reorder: {
+      screen: ReorderScreen
     }
   },
   {
     navigationOptions: {
       tabBarIcon: Icon,
-      tabBarLabel: 'More'
+      tabBarLabel: 'Reorder'
     }
   }
 );

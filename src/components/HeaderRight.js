@@ -1,30 +1,36 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { View } from 'react-native';
 import { gStyle } from '../constants';
 
-const HeaderRight = ({ icon, onPress, text }) => (
-  <TouchableOpacity
-    activeOpacity={gStyle.activeOpacity}
-    onPress={onPress}
-    style={[gStyle.flexRowAlignCenter, gStyle.pR2]}
-  >
-    {text && <Text>{text}</Text>}
-    {icon && <View style={gStyle.mL1}>{icon}</View>}
-  </TouchableOpacity>
+// components
+import Button from './Button';
+
+const HeaderRight = () => (
+  <View style={[gStyle.flexRowAlignCenter, gStyle.pR2]}>
+    <Button
+      style={gStyle.btnPrimary}
+      text="Sign Up"
+      textStyle={gStyle.btnPrimaryText}
+    />
+  </View>
 );
 
-HeaderRight.defaultProps = {
-  icon: null,
-  onPress: () => null,
-  text: null
-};
-
-HeaderRight.propTypes = {
-  // optional
-  icon: PropTypes.element,
-  onPress: PropTypes.func,
-  text: PropTypes.string
-};
+/*
+const styles = StyleSheet.create({
+  playlistItem: {
+    borderRadius: 6,
+    height: 98,
+    flex: 1,
+    marginBottom: 24,
+    marginRight: 24,
+    paddingLeft: 12,
+    paddingTop: 12
+  },
+  playlistTitle: {
+    ...gStyle.textSpotifyBold22,
+    color: colors.white
+  }
+});
+*/
 
 export default HeaderRight;

@@ -6,16 +6,16 @@ import { gStyle } from '../constants';
 import HeaderCenter from '../components/HeaderCenter';
 import HeaderRight from '../components/HeaderRight';
 
-const Home = () => (
+const Offers = () => (
   <View style={[gStyle.flex1, gStyle.flexCenter]}>
-    <Text>Home Screen</Text>
+    <Text>Offers Screen</Text>
   </View>
 );
 
-Home.navigationOptions = {
+Offers.navigationOptions = {
   headerTitle: () => <HeaderCenter />,
   headerRight: () => <HeaderRight />,
   headerStyle: gStyle.navHeaderContainerStyle
 };
 
-export default Home;
+export default Offers;

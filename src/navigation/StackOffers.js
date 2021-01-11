@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { createStackNavigator } from 'react-navigation-stack';
 
 // screens
-import MoreScreen from '../screens/More';
+import OffersScreen from '../screens/Offers';
 
 // icons
-import SvgMore from '../icons/Svg.More';
+import SvgOffers from '../icons/Svg.Offers';
 
-const Icon = ({ focused }) => <SvgMore active={focused} />;
+const Icon = ({ focused }) => <SvgOffers active={focused} />;
 
 Icon.propTypes = {
   // required
@@ -17,14 +17,14 @@ Icon.propTypes = {
 
 export default createStackNavigator(
   {
-    More: {
-      screen: MoreScreen
+    Offers: {
+      screen: OffersScreen
     }
   },
   {
     navigationOptions: {
       tabBarIcon: Icon,
-      tabBarLabel: 'More'
+      tabBarLabel: 'Offers'
     }
   }
 );
