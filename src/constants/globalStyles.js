@@ -110,7 +110,7 @@ export default {
     borderTopColor: colors.background
   },
 
-  // nav tab
+  // buttons
   // ///////////////////////////////////////////////////////////////////////////
   btnPrimary: {
     backgroundColor: colors.primary,
