@@ -23,7 +23,7 @@ Run Project Locally: `yarn dev` or `yarn start`
 
 ## Features
 
-- Expo SDK 40
+- Expo SDK 41
 - iOS, Android and PWA (Progressive Web App)
 - React Navigation v4
 - Linting
@@ -44,5 +44,6 @@ Run Project Locally: `yarn dev` or `yarn start`
 
 ### version 0.0.1 (current)
 
+- upgraded to [Expo SDK 41](https://blog.expo.io/expo-sdk-41-12cc5232f2ef)
 - started with [React Navigation v4](https://reactnavigation.org/docs/4.x/getting-started)
 - started with [Expo SDK 40](https://blog.expo.io/expo-sdk-40-is-now-available-d4d73e67da33)
